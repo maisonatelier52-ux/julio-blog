@@ -12,7 +12,7 @@ export default function Home() {
 
       {/* Header */}
       <header className="absolute top-0 left-0 z-20 w-full">
-        <div className="mx-auto flex max-w-7xl items-center py-6">
+        <div className="mx-auto flex max-w-7xl items-center px-15 py-6">
           {/* Portfolio Box */}
           <a href="#" className="bg-white px-6 py-2 text-sm font-semibold tracking-widest text-black hover:bg-gray-300">
             PORTFOLIO
