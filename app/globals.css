@@ -42,6 +42,11 @@ body {
   font-family: var(--font-archivo-black), sans-serif;
 }
 
+/* Roboto Condensed */
+.font-roboto {
+  font-family: var(--font-roboto-condensed), sans-serif;
+}
+
 /* Global heading style */
 h1,
 h2,

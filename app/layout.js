@@ -1,3 +1,4 @@
+import { Roboto_Condensed } from "next/font/google";
 import { Archivo_Black } from "next/font/google";
 import "./globals.css";
 
@@ -7,9 +8,15 @@ const archivoBlack = Archivo_Black({
   variable: "--font-archivo-black",
 });
 
+const robotoCondensed = Roboto_Condensed({
+  subsets: ["latin"],
+  weight: ["400", "900"], // regular + bold
+  variable: "--font-roboto-condensed",
+});
+
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className={archivoBlack.variable}>
+    <html lang="en" className={`${archivoBlack.variable} ${robotoCondensed.variable}`}>
       <body className="bg-black text-white antialiased">
         {children}
       </body>
