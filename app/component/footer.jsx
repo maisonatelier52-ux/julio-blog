@@ -26,21 +26,14 @@ export default function Footer() {
 
   return (
     <footer className="absolute bottom-0 left-0 w-full px-15 pb-15">
-      <div className="flex items-center justify-between">
-        {/* Line with circle */}
-        <div className="flex items-center">
-          <span className="w-2 h-2 border-2 border-white rounded-full"></span>
-          <div className="h-px w-[48rem] bg-white opacity-100 ml-2"></div>
+        <div className="flex items-center justify-between">
+          {/* Line with circle at start */}
+          <div className="flex items-center relative">
+            <span className="w-2 h-2 border-2 border-white rounded-full"></span>
+            <div className="h-px w-[48rem] bg-white opacity-100"></div>
+            <Link href={nextPage.path} className="font-roboto text-white font-bold tracking-widest px-3">JHV</Link>
+          </div>
         </div>
-
-        {/* JHV → Next Page */}
-        <Link
-          href={nextPage.path}
-          className="font-roboto text-white font-bold tracking-widest transition hover:text-gray-400"
-        >
-          JHV
-        </Link>
-      </div>
-    </footer>
+      </footer>
   );
 }

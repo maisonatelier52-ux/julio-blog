@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Home() {
   return (
     <main className="relative h-screen w-screen overflow-hidden bg-black text-white">
@@ -11,7 +13,7 @@ export default function Home() {
       />
 
       {/* Content */}
-      <section className="relative z-10 flex h-full items-center">
+      <section className="relative flex h-full items-center">
         <div className="max-w-4xl px-15">
           <p className="font-roboto font-bold px-1">JHV</p>
           <h1 className="font-archivo text-6xl font-bold leading-tight">
@@ -24,17 +26,15 @@ export default function Home() {
       </section>
 
       {/* Bottom White Line with hollow circle at start */}
-      <footer className="absolute bottom-0 left-0 w-full px-15 pb-15">
+      {/* <footer className="absolute bottom-0 left-0 w-full px-15 pb-15">
         <div className="flex items-center justify-between">
-          {/* Line with circle at start */}
           <div className="flex items-center relative">
             <span className="w-2 h-2 border-2 border-white rounded-full"></span>
             <div className="h-px w-[48rem] bg-white opacity-100"></div>
-            {/* JHV on right */}
-          <span className="font-roboto px-3 text-white font-bold tracking-widest">JHV</span>
+          <Link href="\about" className="font-roboto px-3 text-white font-bold tracking-widest">JHV</Link>
           </div>
         </div>
-      </footer>
+      </footer> */}
     </main>
   );
 }
