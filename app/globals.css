@@ -35,22 +35,7 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-/* ============================= */
-/* Archivo Black Utilities       */
-/* ============================= */
-.font-archivo {
-  font-family: var(--font-archivo-black), sans-serif;
-}
-
 /* Roboto Condensed */
 .font-roboto {
   font-family: var(--font-roboto-condensed), sans-serif;
-}
-
-/* Global heading style */
-h1,
-h2,
-h3 {
-  font-family: var(--font-archivo-black), sans-serif;
-  letter-spacing: -0.02em;
 }

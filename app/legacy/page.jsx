@@ -17,7 +17,7 @@ export default function About() {
           <h1 className="font-archivo text-6xl font-bold leading-tight">
             Julio Herrera Velutini
           </h1>
-          <h2 className="font-roboto mt-3 text-xl font-bold leading-tight">PROFESSIONAL PROFILE</h2>
+          <h2 className="font-roboto mt-3 text-xl font-bold leading-tight">LEGACY</h2>
           <p className="font-roboto mt-6 text-sm text-gray-300">
             Leadership means having deep respect for the past and a bold vision for the future.
           </p>
