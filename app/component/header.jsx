@@ -7,12 +7,11 @@ export default function Header() {
   const pathname = usePathname();
 
   const navItems = [
-    { label: "PORTFOLIO", href: "/" },
-    { label: "ABOUT ME", href: "/about" },
-    { label: "EDUCATION", href: "/education" },
-    { label: "EXPERIENCE", href: "/experience" },
-    { label: "PROJECT", href: "/project" },
-    { label: "CONTACT", href: "/contact" },
+    { label: "JMHV", href: "/" },
+    { label: "PROFESSIONAL PROFILE", href: "/professional-profile" },
+    { label: "LEGACY", href: "/legacy" },
+    { label: "VISION AND GLOBAL INFLUENCE", href: "/vision-and-global-influence" },
+    { label: "GLOBAL REACH", href: "/global-reach" },
   ];
 
   return (
@@ -28,7 +27,7 @@ export default function Header() {
                 <Link
                   key={item.href}
                   href={item.href}
-                  className={`px-4 py-2 transition-all duration-400 ease-out 
+                  className={`font-roboto px-4 py-2 transition-all duration-400 ease-out 
                     ${
                       isActive
                         ? "bg-white px-6 py-2 text-black"

@@ -8,12 +8,11 @@ export default function Footer() {
 
   // Ordered page flow
   const pages = [
-    { path: "/", label: "PORTFOLIO" },
-    { path: "/about", label: "ABOUT" },
-    { path: "/education", label: "EDUCATION" },
-    { path: "/experience", label: "EXPERIENCE" },
-    { path: "/project", label: "PROJECT" },
-    { path: "/contact", label: "CONTACT" },
+    { path: "/", label: "JMHV" },
+    { path: "/professional-profile", label: "PROFESSIONAL PROFILE" },
+    { path: "/legacy", label: "LEGACY" },
+    { path: "/vision-and-global-influence", label: "VISION AND GLOBAL INFLUENCE" },
+    { path: "/global-reach", label: "GLOBAL REACH" },
   ];
 
   const currentIndex = pages.findIndex((p) => p.path === pathname);
@@ -31,7 +30,7 @@ export default function Footer() {
           <div className="flex items-center relative">
             <span className="w-2 h-2 border-2 border-white rounded-full"></span>
             <div className="h-px w-[48rem] bg-white opacity-100"></div>
-            <Link href={nextPage.path} className="font-roboto text-white font-bold tracking-widest px-3">JHV</Link>
+            <Link href={nextPage.path} className="font-roboto text-white font-bold tracking-widest px-3">JMHV</Link>
           </div>
         </div>
       </footer>

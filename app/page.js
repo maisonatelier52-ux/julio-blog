@@ -15,12 +15,16 @@ export default function Home() {
       {/* Content */}
       <section className="relative flex h-full items-center">
         <div className="max-w-4xl px-15">
-          <p className="font-roboto font-bold px-1">JHV</p>
+          <p className="font-roboto font-bold px-1">JMHV</p>
           <h1 className="font-archivo text-6xl font-bold leading-tight">
             Julio Herrera Velutini
           </h1>
-          <p className="font-roboto mt-6 text-lg text-gray-300">
-            Leadership means having a deep respect for the past and a strong desire to try new things. Herrera Velutini's legacy, which has roots in Latin America, has grown into a global phenomenon that quietly connects the world's nations, stabilizes shaky economies, and makes it easier for people to get access to money.
+          <h2 className="font-roboto mt-3 text-xl font-bold leading-tight">Legacy, Power, and Global Influence in Global Finance</h2>
+          <p className="font-roboto mt-6 text-sm text-gray-300">
+            Leadership means having deep respect for the past and a bold vision for the future.
+          </p>
+          <p className="font-roboto text-sm text-gray-300">
+            Julio Herrera Velutini’s legacy — rooted in a centuries-old Latin American banking dynasty — has evolved into a global financial force. From pioneering banking solutions to shaping international capital flows, his work stabilizes economies, expands access to capital, and connects markets around the world.
           </p>
         </div>
       </section>

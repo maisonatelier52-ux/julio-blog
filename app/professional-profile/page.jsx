@@ -25,7 +25,7 @@ export default function About() {
             ABOUT ME
           </h2>
 
-          <p className="font-roboto text-xl text-gray-300 leading-relaxed mb-4">
+          <p className="font-roboto text-md text-gray-300 leading-relaxed mb-4">
             Leadership means having a deep respect for the past and a strong desire
             to try new things. Herrera Velutini's legacy, rooted in Latin America,
             has evolved into a global financial presence that quietly connects
