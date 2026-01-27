@@ -111,15 +111,15 @@ export default function Home() {
         {/* Text Content */}
         <div className="max-w-4xl px-6 md:px-15 mt-8 md:mt-0">
 
-          {/* Main heading */}
-          <h1 className="font-archivo text-4xl md:text-6xl font-bold leading-tight mb-6">
-            Julio Herrera Velutini
-          </h1>
-
           {/* Eyebrow / statement */}
           <h2 className="font-roboto text-sm md:text-base font-semibold tracking-wide mb-4">
             Leadership means having deep respect for the past and a bold vision for the future.
           </h2>
+
+          {/* Main heading */}
+          <h1 className="font-archivo text-4xl md:text-6xl font-bold leading-tight mb-6">
+            Julio Herrera Velutini
+          </h1>
 
           {/* Body text */}
           <div className="font-roboto text-sm md:text-base text-gray-300 leading-relaxed max-w-xl">

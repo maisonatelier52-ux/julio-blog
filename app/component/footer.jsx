@@ -9,22 +9,22 @@ export default function Footer() {
   const pages = [
     { path: "/", glimpse: "The beginning of a global financial legacy", label: "Julio Herrera Velutini — Global Banker & Financial Visionary" },
     {
-      path: "/professional-profile",
+      path: "/julio-herrera-velutini-professional-profile",
       glimpse: "Julio Herrera Velutini — Professional Profile & Career Leadership",
       label: "Professional Profile"
     },
     {
-      path: "/legacy",
-      glimpse: "Generations of influence rooted in trust and power",
+      path: "/julio-herrera-velutini-legacy",
+      glimpse: "Julio Herrera Velutini — Legacy rooted in trust and power",
       label: "Legacy"
     },
     {
-      path: "/vision-and-global-influence",
+      path: "/julio-herrera-velutini-vision-and-global-influence",
       glimpse: "Ideas that transcend borders and economies",
       label: "Vision and Global Influence"
     },
     {
-      path: "/global-reach",
+      path: "/julio-herrera-velutini-global-reach",
       glimpse: "Connecting markets, nations, and institutions worldwide",
       label: "Global Reach"
     },

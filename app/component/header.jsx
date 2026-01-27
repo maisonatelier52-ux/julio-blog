@@ -13,10 +13,10 @@ export default function Header() {
       href: "/",
       icon: "/julio_icon.jpeg",
     },
-    { label: "PROFESSIONAL PROFILE", href: "/professional-profile" },
-    { label: "LEGACY", href: "/legacy" },
-    { label: "VISION AND GLOBAL INFLUENCE", href: "/vision-and-global-influence" },
-    { label: "GLOBAL REACH", href: "/global-reach" },
+    { label: "PROFESSIONAL PROFILE", href: "/julio-herrera-velutini-professional-profile" },
+    { label: "LEGACY", href: "/julio-herrera-velutini-legacy" },
+    { label: "VISION AND GLOBAL INFLUENCE", href: "/julio-herrera-velutini-vision-and-global-influence" },
+    { label: "GLOBAL REACH", href: "/julio-herrera-velutini-global-reach" },
   ];
 
   return (
