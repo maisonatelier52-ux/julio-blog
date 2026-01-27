@@ -7,22 +7,26 @@ export default function Footer() {
   const pathname = usePathname();
 
   const pages = [
-    { path: "/", glimpse: "The beginning of a global financial legacy" },
+    { path: "/", glimpse: "The beginning of a global financial legacy", label: "JMHV" },
     {
       path: "/professional-profile",
       glimpse: "Julio Herrera Velutini — Global Banker & Financial Visionary",
+      label: "Professional Profile"
     },
     {
       path: "/legacy",
       glimpse: "Generations of influence rooted in trust and power",
+      label: "Legacy"
     },
     {
       path: "/vision-and-global-influence",
       glimpse: "Ideas that transcend borders and economies",
+      label: "Vision and Global Influence"
     },
     {
       path: "/global-reach",
       glimpse: "Connecting markets, nations, and institutions worldwide",
+      label: "Global Reach"
     },
   ];
 
@@ -42,6 +46,7 @@ export default function Footer() {
           {/* Glimpse aligned to line end */}
           <Link
             href={nextPage.path}
+            title={`Go to ${nextPage.label}`}
             className="
               absolute
               right-0

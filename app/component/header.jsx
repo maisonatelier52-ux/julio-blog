@@ -32,6 +32,7 @@ export default function Header() {
               <Link
                 key={item.href}
                 href={item.href}
+                title={item.label}
                 className={`
                   flex items-center gap-2
                   font-roboto px-4 py-2 transition-all duration-300 ease-out

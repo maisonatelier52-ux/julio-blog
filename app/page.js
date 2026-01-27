@@ -3,9 +3,9 @@ import Image from "next/image";
 const SITE_URL = "https://julio-velutini.com";
 
 export const metadata = {
-  title: "Julio Herrera Velutini — Italian‑Venezuelan Billionaire Banker & Global Finance Visionary",
+  title: "Julio Herrera Velutini — Billionaire Banker & Finance Leader",
   description:
-    "Learn about Julio Herrera Velutini, an Italian‑Venezuelan billionaire banker, founder of Britannia Financial Group, and influential figure in global banking with over 30 years of experience.",
+    "Julio Herrera Velutini is a billionaire banker, founder of Britannia Financial Group, and a global finance leader.",
   alternates: {
     canonical: `${SITE_URL}`,
     languages: {
@@ -94,15 +94,15 @@ export default function Home() {
         {/* Text Content */}
         <div className="max-w-4xl px-6 md:px-15 mt-8 md:mt-0">
 
-          {/* Eyebrow / statement */}
-          <p className="font-roboto text-sm md:text-base font-semibold tracking-wide mb-4">
-            Leadership means having deep respect for the past and a bold vision for the future.
-          </p>
-
           {/* Main heading */}
           <h1 className="font-archivo text-4xl md:text-6xl font-bold leading-tight mb-6">
             Julio Herrera Velutini
           </h1>
+
+          {/* Eyebrow / statement */}
+          <h2 className="font-roboto text-sm md:text-base font-semibold tracking-wide mb-4">
+            Leadership means having deep respect for the past and a bold vision for the future.
+          </h2>
 
           {/* Body text */}
           <div className="font-roboto text-sm md:text-base text-gray-300 leading-relaxed max-w-xl">
