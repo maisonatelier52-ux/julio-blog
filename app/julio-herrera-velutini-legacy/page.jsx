@@ -7,13 +7,13 @@ export const metadata = {
   description:
     "Explore the legacy of Julio Herrera Velutini and the historic House of Herrera, a banking dynasty shaping Latin American and global finance for generations.",
   alternates: {
-    canonical: `${SITE_URL}/legacy`,
+    canonical: `${SITE_URL}/julio-herrera-velutini-legacy`,
   },
   openGraph: {
     title: "Julio Herrera Velutini Legacy — Banking Dynasty & Global Finance",
     description:
       "The legacy of Julio Herrera Velutini and the House of Herrera, spanning centuries of financial leadership and global banking influence.",
-    url: `${SITE_URL}/legacy`,
+    url: `${SITE_URL}/julio-herrera-velutini-legacy`,
     type: "article",
     siteName: "Julio Velutini Official",
     images: [
@@ -42,7 +42,7 @@ export default function Home() {
     "@context": "https://schema.org",
     "@type": "Person",
     "name": "Julio Herrera Velutini",
-    "url": `${SITE_URL}/legacy`,
+    "url": `${SITE_URL}/julio-herrera-velutini-legacy`,
     "image": `${SITE_URL}/julio_velutini_og.webp`,
     "description":
       "Julio Herrera Velutini is a global banker and seventh-generation steward of the historic House of Herrera, a financial dynasty with deep roots in Latin America.",

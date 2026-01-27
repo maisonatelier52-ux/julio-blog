@@ -7,10 +7,10 @@ export const metadata = {
   description:
     "Explore the professional career, leadership roles, and business achievements of Julio Herrera Velutini, global banker and founder of Britannia Financial Group.",
   alternates: {
-    canonical: `${SITE_URL}/`,
+    canonical: `${SITE_URL}/julio-herrera-velutini-professional-profile`,
     languages: {
-      "en": `${SITE_URL}/`,
-      "en-US": `${SITE_URL}/`,
+      "en": `${SITE_URL}/julio-herrera-velutini-professional-profile`,
+      "en-US": `${SITE_URL}/julio-herrera-velutini-professional-profile`,
     },
   },
   openGraph: {
@@ -43,7 +43,7 @@ export default function Home() {
     "@context": "https://schema.org",
     "@type": "Person",
     "name": "Julio Herrera Velutini",
-    "url": SITE_URL,
+    "url": `${SITE_URL}/julio-herrera-velutini-professional-profile`,
     "image": `${SITE_URL}/julio_velutini_og.webp`,
     "sameAs": [
       "https://en.wikipedia.org/wiki/Julio_Herrera_Velutini"
