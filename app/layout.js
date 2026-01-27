@@ -3,6 +3,14 @@ import "./globals.css";
 import Header from "./component/header";
 import Footer from "./component/footer";
 
+export const metadata = {
+  metadataBase: new URL("https://www.julio-velutini.com"),
+
+  icons: {
+    icon: "/favicon.ico",
+  },
+};
+
 const robotoCondensed = Roboto_Condensed({
   subsets: ["latin"],
   weight: ["400", "900"], // regular + bold
