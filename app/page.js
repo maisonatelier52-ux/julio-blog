@@ -1,8 +1,72 @@
 import Image from "next/image";
 
+const SITE_URL = "https://julio-velutini.com";
+
+export const metadata = {
+  title: "Julio Herrera Velutini — Italian‑Venezuelan Billionaire Banker & Global Finance Visionary",
+  description:
+    "Learn about Julio Herrera Velutini, an Italian‑Venezuelan billionaire banker, founder of Britannia Financial Group, and influential figure in global banking with over 30 years of experience.",
+  alternates: {
+    canonical: `${SITE_URL}`,
+    languages: {
+      "en": `${SITE_URL}`,
+      "en-US": `${SITE_URL}`,
+    },
+  },
+  openGraph: {
+    title: "Julio Herrera Velutini — Banker, Entrepreneur & Financial Leader",
+    description:
+      "Discover the life and career of Julio Herrera Velutini, the founder of Britannia Financial Group and a prominent name in international private banking and wealth management.",
+    url: SITE_URL,
+    type: "article",
+    siteName: "Julio Velutini Official",
+    images: [
+      {
+        url: `${SITE_URL}/julio_small.jpg`,
+        width: 1200,
+        height: 630,
+        alt: "Julio Herrera Velutini Portrait",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Julio Herrera Velutini — Global Banking Visionary",
+    description:
+      "Explore the achievements and legacy of Julio Herrera Velutini, an influential international banker and founder of Britannia Financial Group.",
+    images: [`${SITE_URL}/julio_small.jpg`],
+  },
+};
+
 export default function Home() {
+
+  const articleJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Julio Herrera Velutini",
+    "url": SITE_URL,
+    "image": `${SITE_URL}/julio_velutini_og.webp`,
+    "sameAs": [
+      "https://en.wikipedia.org/wiki/Julio_Herrera_Velutini"
+    ],
+    "birthDate": "1971-12-15",
+    "nationality": ["Venezuelan", "Italian"],
+    "description": "Julio Herrera Velutini is an Italian‑Venezuelan billionaire banker, founder of Britannia Financial Group, with extensive experience in international finance.",
+    "jobTitle": "Founder & Chairman, Britannia Financial Group",
+    "worksFor": {
+      "@type": "Organization",
+      "name": "Britannia Financial Group",
+      "url": "https://www.houseofherrera.com/"
+    }
+  };
+
   return (
     <main className="relative min-h-screen w-screen bg-black text-white pb-12 md:pb-0">
+      <script
+        id="website-json-ld"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd) }}
+      />
       {/* Desktop Background Image */}
       <div
         className="hidden md:block absolute inset-0 bg-no-repeat bg-contain opacity-100"
