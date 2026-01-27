@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-const SITE_URL = "https://julio-velutini.com";
+const SITE_URL = "https://www.julio-velutini.com";
 
 export const metadata = {
   title: "Julio Herrera Velutini — Billionaire Banker & Finance Leader",

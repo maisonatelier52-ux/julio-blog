@@ -7,10 +7,10 @@ export default function Footer() {
   const pathname = usePathname();
 
   const pages = [
-    { path: "/", glimpse: "The beginning of a global financial legacy", label: "JMHV" },
+    { path: "/", glimpse: "The beginning of a global financial legacy", label: "Julio Herrera Velutini — Global Banker & Financial Visionary" },
     {
       path: "/professional-profile",
-      glimpse: "Julio Herrera Velutini — Global Banker & Financial Visionary",
+      glimpse: "Julio Herrera Velutini — Professional Profile & Career Leadership",
       label: "Professional Profile"
     },
     {

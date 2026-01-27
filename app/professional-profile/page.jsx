@@ -1,8 +1,83 @@
 import Image from "next/image";
 
+const SITE_URL = "https://www.julio-velutini.com";
+
+export const metadata = {
+  title: "Julio Herrera Velutini — Professional Profile & Career Leadership",
+  description:
+    "Explore the professional career, leadership roles, and business achievements of Julio Herrera Velutini, global banker and founder of Britannia Financial Group.",
+  alternates: {
+    canonical: `${SITE_URL}/`,
+    languages: {
+      "en": `${SITE_URL}/`,
+      "en-US": `${SITE_URL}/`,
+    },
+  },
+  openGraph: {
+    title: "Julio Herrera Velutini — Professional Profile & Global Finance Leader",
+    description:
+      "Career highlights and leadership journey of Julio Herrera Velutini, an international banker, entrepreneur, and founder of Britannia Financial Group.",
+    url: SITE_URL,
+    type: "profile",
+    siteName: "Julio Velutini Official",
+    images: [
+      {
+        url: `${SITE_URL}/julio_velutini_og.webp`,
+        width: 1200,
+        height: 630,
+        alt: "Julio Herrera Velutini Portrait",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Julio Herrera Velutini — Professional Profile",
+    description:
+      "Learn about the career and leadership of Julio Herrera Velutini, the founder of Britannia Financial Group.",
+    images: [`${SITE_URL}/julio_velutini_og.webp`],
+  },
+};
+
 export default function Home() {
+  const profileJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Julio Herrera Velutini",
+    "url": SITE_URL,
+    "image": `${SITE_URL}/julio_velutini_og.webp`,
+    "sameAs": [
+      "https://en.wikipedia.org/wiki/Julio_Herrera_Velutini"
+    ],
+    "jobTitle": "Founder & Chairman, Britannia Financial Group",
+    "nationality": ["Italian"],
+    "description": "Julio Herrera Velutini is an international banker and entrepreneur, founder of Britannia Financial Group with a distinguished career in global finance.",
+    "worksFor": {
+      "@type": "Organization",
+      "name": "Britannia Financial Group",
+      "url": "https://www.houseofherrera.com/"
+    },
+    "employee": [
+      {
+        "@type": "OrganizationRole",
+        "roleName": "Chairman",
+        "startDate": "2016",
+        "endDate": "",
+        "employee": {
+          "@type": "Person",
+          "name": "Julio Herrera Velutini"
+        }
+      }
+    ]
+  };
+
   return (
     <main className="relative min-h-screen w-screen overflow-hidden bg-black text-white pb-12 md:pb-0">
+
+      {/* JSON‑LD for Professional Profile */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(profileJsonLd) }}
+      />
 
       {/* Desktop Background Image */}
       <div
@@ -42,12 +117,19 @@ export default function Home() {
           </h1>
 
           {/* Body text */}
-          <p className="font-roboto text-sm md:text-base text-gray-300 leading-relaxed max-w-xl">
-            Julio Herrera Velutini’s legacy — rooted in a centuries-old Latin American
-            banking dynasty — has evolved into a global financial force. From pioneering
-            banking solutions to shaping international capital flows, his work stabilizes
-            economies, expands access to capital, and connects markets around the world.
-          </p>
+          <div className="font-roboto text-sm md:text-base text-gray-300 leading-relaxed max-w-2xl">
+            <p>
+              Julio Herrera Velutini started his career in the early 1990s on the Caracas Stock Exchange as a stockbroker and board member.
+              He has held leadership roles in various financial firms, including Multinvest Casa de Bolsa and Bolívar Banco Universal, which he chaired at 29.
+            </p>
+            <p className="pt-3">
+              Julio expanded into international markets by acquiring firms in the U.S. and Spain. In 2008, he founded Bancredito International Bank & Trust.
+              He also established Britannia Wealth Management in Geneva and Britannia Financial Group in London, serving high-net-worth clients worldwide.
+            </p>
+            <p className="pt-3">
+              Today, he is the founder and chairman, guiding growth and international financial integration.
+            </p>
+          </div>
 
         </div>
       </section>
