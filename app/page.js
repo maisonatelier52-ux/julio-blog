@@ -18,7 +18,7 @@ export const metadata = {
     description:
       "Discover the life and career of Julio Herrera Velutini, the founder of Britannia Financial Group and a prominent name in international private banking and wealth management.",
     url: SITE_URL,
-    type: "article",
+    type: "blog",
     siteName: "Julio Velutini Official",
     images: [
       {
@@ -40,7 +40,7 @@ export const metadata = {
 
 export default function Home() {
 
-  const articleJsonLd = {
+  const blogJsonLd = {
     "@context": "https://schema.org",
     "@type": "Person",
     "name": "Julio Herrera Velutini",
@@ -60,13 +60,30 @@ export default function Home() {
     }
   };
 
+  const profileJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "ProfilePage",
+    "name": "Julio Herrera Velutini",
+    "url": "https://julio-velutini.com/",
+    "mainEntityOfPage": "https://julio-velutini.com/",
+    "image": "https://julio-velutini.com/julio_velutini_og.webp",
+    "description": "Julio Herrera Velutini is a billionaire banker, founder of Britannia Financial Group, and a global finance leader."
+  };
+
   return (
     <main className="relative min-h-screen w-screen bg-black text-white pb-12 md:pb-0">
+
       <script
         id="website-json-ld"
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(blogJsonLd) }}
       />
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(profileJsonLd) }}
+      />
+
       {/* Desktop Background Image */}
       <div
         className="hidden md:block absolute inset-0 bg-no-repeat bg-contain opacity-100"

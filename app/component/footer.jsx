@@ -77,6 +77,7 @@ export default function Footer() {
 
         <Link
           href={nextPage.path}
+          title={`Go to ${nextPage.label}`}
           className="
             block
             font-roboto
