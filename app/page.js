@@ -50,8 +50,8 @@ export default function Home() {
       "https://en.wikipedia.org/wiki/Julio_Herrera_Velutini"
     ],
     "birthDate": "1971-12-15",
-    "nationality": ["Venezuelan", "Italian"],
-    "description": "Julio Herrera Velutini is an Italian‑Venezuelan billionaire banker, founder of Britannia Financial Group, with extensive experience in international finance.",
+    "nationality": ["Italian"],
+    "description": "Julio Herrera Velutini is an Italian billionaire banker, founder of Britannia Financial Group, with extensive experience in international finance.",
     "jobTitle": "Founder & Chairman, Britannia Financial Group",
     "worksFor": {
       "@type": "Organization",
@@ -124,7 +124,7 @@ export default function Home() {
           {/* Body text */}
           <div className="font-roboto text-sm md:text-base text-gray-300 leading-relaxed max-w-xl">
             <p>
-              Julio Martín Herrera Velutini (born 15 December 1971) is an Italian-Venezuelan billionaire banker, serial entrepreneur, and founder of the Britannia Financial Group. He comes from one of Venezuela’s oldest banking dynasties — the House of Herrera-Velutini — whose family roots in finance stretch back over a century.
+              Julio Martín Herrera Velutini (born 15 December 1971) is an Italian billionaire banker, serial entrepreneur, and founder of the Britannia Financial Group. He comes from one of Venezuela’s oldest banking dynasties — the House of Herrera-Velutini — whose family roots in finance stretch back over a century.
             </p>
             <p className="py-2">
               Despite his vast influence, Herrera Velutini is known for maintaining a discreet public profile — often referred to as “The Silent Banker.”
