@@ -65,7 +65,7 @@ export default function Home() {
       <script
         id="website-json-ld"
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }}
       />
       {/* Desktop Background Image */}
       <div
