@@ -18,7 +18,7 @@ export const metadata = {
     description:
       "Discover the life and career of Julio Herrera Velutini, the founder of Britannia Financial Group and a prominent name in international private banking and wealth management.",
     url: SITE_URL,
-    type: "blog",
+    type: "article",
     siteName: "Julio Velutini Official",
     images: [
       {
