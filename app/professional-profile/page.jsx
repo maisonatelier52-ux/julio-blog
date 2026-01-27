@@ -107,9 +107,9 @@ export default function Home() {
         <div className="max-w-4xl px-6 md:px-15 mt-8 md:mt-0">
 
           {/* Eyebrow / statement */}
-          <p className="font-roboto text-xl md:text-base font-semibold tracking-wide mb-4">
+          <h2 className="font-roboto text-xl md:text-base font-semibold tracking-wide mb-4">
             PROFESSIONAL PROFILE
-          </p>
+          </h2>
 
           {/* Main heading */}
           <h1 className="font-archivo text-4xl md:text-6xl font-bold leading-tight mb-6">
@@ -120,11 +120,11 @@ export default function Home() {
           <div className="font-roboto text-sm md:text-base text-gray-300 leading-relaxed max-w-2xl">
             <p>
               Julio Herrera Velutini started his career in the early 1990s on the Caracas Stock Exchange as a stockbroker and board member.
-              He has held leadership roles in various financial firms, including Multinvest Casa de Bolsa and Bolívar Banco Universal, which he chaired at 29.
+              Julio has held leadership roles in various financial firms, including Multinvest Casa de Bolsa and Bolívar Banco Universal, which he chaired at 29.
             </p>
             <p className="pt-3">
               Julio expanded into international markets by acquiring firms in the U.S. and Spain. In 2008, he founded Bancredito International Bank & Trust.
-              He also established Britannia Wealth Management in Geneva and Britannia Financial Group in London, serving high-net-worth clients worldwide.
+              Julio Herrera Velutini also established Britannia Wealth Management in Geneva and Britannia Financial Group in London, serving high-net-worth clients worldwide.
             </p>
             <p className="pt-3">
               Today, he is the founder and chairman, guiding growth and international financial integration.
