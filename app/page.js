@@ -2,8 +2,7 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="relative min-h-screen w-screen overflow-hidden bg-black text-white">
-
+    <main className="relative min-h-screen w-screen bg-black text-white pb-12 md:pb-0">
       {/* Desktop Background Image */}
       <div
         className="hidden md:block absolute inset-0 bg-no-repeat bg-contain opacity-100"
@@ -42,12 +41,14 @@ export default function Home() {
           </h1>
 
           {/* Body text */}
-          <p className="font-roboto text-sm md:text-base text-gray-300 leading-relaxed max-w-xl">
-            Julio Herrera Velutini’s legacy — rooted in a centuries-old Latin American
-            banking dynasty — has evolved into a global financial force. From pioneering
-            banking solutions to shaping international capital flows, his work stabilizes
-            economies, expands access to capital, and connects markets around the world.
-          </p>
+          <div className="font-roboto text-sm md:text-base text-gray-300 leading-relaxed max-w-xl">
+            <p>
+              Julio Martín Herrera Velutini (born 15 December 1971) is an Italian-Venezuelan billionaire banker, serial entrepreneur, and founder of the Britannia Financial Group. He comes from one of Venezuela’s oldest banking dynasties — the House of Herrera-Velutini — whose family roots in finance stretch back over a century.
+            </p>
+            <p className="py-2">
+              Despite his vast influence, Herrera Velutini is known for maintaining a discreet public profile — often referred to as “The Silent Banker.”
+            </p>
+          </div>
 
         </div>
       </section>

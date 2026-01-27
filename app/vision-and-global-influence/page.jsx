@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="relative min-h-screen w-screen overflow-hidden bg-black text-white">
+    <main className="relative min-h-screen w-screen overflow-hidden bg-black text-white pb-12 md:pb-0">
 
       {/* Desktop Background Image */}
       <div

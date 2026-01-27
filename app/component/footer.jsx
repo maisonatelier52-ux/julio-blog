@@ -7,25 +7,21 @@ export default function Footer() {
   const pathname = usePathname();
 
   const pages = [
-    { path: "/", label: "JMHV", glimpse: "The beginning of a global financial legacy" },
+    { path: "/", glimpse: "The beginning of a global financial legacy" },
     {
       path: "/professional-profile",
-      label: "PROFESSIONAL PROFILE",
-      glimpse: "A career shaped by leadership, discipline, and scale",
+      glimpse: "Julio Herrera Velutini — Global Banker & Financial Visionary",
     },
     {
       path: "/legacy",
-      label: "LEGACY",
       glimpse: "Generations of influence rooted in trust and power",
     },
     {
       path: "/vision-and-global-influence",
-      label: "VISION AND GLOBAL INFLUENCE",
       glimpse: "Ideas that transcend borders and economies",
     },
     {
       path: "/global-reach",
-      label: "GLOBAL REACH",
       glimpse: "Connecting markets, nations, and institutions worldwide",
     },
   ];
@@ -38,37 +34,63 @@ export default function Footer() {
       : pages[0];
 
   return (
-    <footer className="absolute bottom-0 left-0 w-full text-white px-6 md:px-15 pb-6 md:pb-15">
+    <footer className="w-full text-white px-6 md:px-15 pb-6 md:pb-15 md:absolute md:bottom-0 bg-black">
+      {/* Desktop */}
+      <div className="hidden md:block">
+        <div className="relative w-[48rem]">
 
-      {/* Glimpse text */}
-      <div className="font-roboto text-sm tracking-wide text-gray-400 mb-4">
-        {nextPage.glimpse}
-      </div>
-
-      {/* Desktop layout */}
-      <div className="hidden md:flex items-center justify-between">
-        <div className="flex items-center relative">
-          <span className="w-2 h-2 border-2 border-white rounded-full" />
-          <div className="h-px w-[48rem] bg-white opacity-100" />
+          {/* Glimpse aligned to line end */}
           <Link
             href={nextPage.path}
-            className="font-roboto font-bold tracking-widest px-3 hover:text-gray-300 transition"
+            className="
+              absolute
+              right-0
+              -top-5
+              font-roboto
+              text-sm
+              tracking-wide
+              text-gray-400
+              hover:text-white
+              transition
+              text-right
+              max-w-full
+            "
           >
-            JMHV
+            {nextPage.glimpse}
           </Link>
+
+          {/* Line */}
+          <div className="flex items-center">
+            <span className="w-2 h-2 border-2 border-white rounded-full" />
+            <div className="h-px flex-1 bg-white opacity-100" />
+          </div>
         </div>
       </div>
 
-      {/* Mobile layout */}
-      <div className="md:hidden flex items-center">
-        <span className="w-2 h-2 border-2 border-white rounded-full" />
-        <div className="h-px flex-1 bg-white opacity-60" />
+      {/* Mobile */}
+      <div className="md:hidden relative w-full">
+
         <Link
           href={nextPage.path}
-          className="font-roboto text-sm px-2 font-bold tracking-widest uppercase"
+          className="
+            block
+            font-roboto
+            text-xs
+            tracking-wide
+            text-gray-400
+            mb-2
+            text-right
+            hover:text-white
+            transition
+          "
         >
-          JMHV
+          {nextPage.glimpse}
         </Link>
+
+        <div className="flex items-center">
+          <span className="w-2 h-2 border-2 border-white rounded-full" />
+          <div className="h-px flex-1 bg-white opacity-60" />
+        </div>
       </div>
 
     </footer>
