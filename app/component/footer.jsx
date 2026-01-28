@@ -20,12 +20,12 @@ export default function Footer() {
     },
     {
       path: "/julio-herrera-velutini-vision-and-global-influence",
-      glimpse: "Ideas that transcend borders and economies",
+      glimpse: "Julio Herrera Velutini — Ideas that transcend borders and economies",
       label: "Vision and Global Influence"
     },
     {
       path: "/julio-herrera-velutini-global-reach",
-      glimpse: "Connecting markets, nations, and institutions worldwide",
+      glimpse: "Julio Herrera Velutini — Connecting markets, nations, and institutions worldwide",
       label: "Global Reach"
     },
   ];
