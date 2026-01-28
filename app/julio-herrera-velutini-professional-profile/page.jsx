@@ -17,7 +17,7 @@ export const metadata = {
     title: "Julio Herrera Velutini — Professional Profile & Global Finance Leader",
     description:
       "Career highlights and leadership journey of Julio Herrera Velutini, an international banker, entrepreneur, and founder of Britannia Financial Group.",
-    url: SITE_URL,
+    url: `${SITE_URL}/julio-herrera-velutini-professional-profile`,
     type: "profile",
     siteName: "Julio Velutini Official",
     images: [
@@ -84,7 +84,7 @@ export default function Home() {
         className="hidden md:block absolute inset-0 bg-no-repeat bg-contain opacity-100"
         style={{
           backgroundImage: "url('/hero2.png')",
-          backgroundPosition: "center right",
+          backgroundPosition: "calc(100% - 70px) center",
         }}
       />
 

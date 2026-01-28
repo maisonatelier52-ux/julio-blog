@@ -75,7 +75,7 @@ export default function Home() {
         className="hidden md:block absolute inset-0 bg-no-repeat bg-contain opacity-100"
         style={{
           backgroundImage: "url('/hero2.png')",
-          backgroundPosition: "center right",
+          backgroundPosition: "calc(100% - 70px) center",
         }}
       />
 
