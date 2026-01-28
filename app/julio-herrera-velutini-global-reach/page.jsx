@@ -8,7 +8,7 @@ const SITE_URL = "https://www.julio-velutini.com";
 export const metadata = {
   title: "Julio Herrera Velutini Global Reach | International Finance Influence",
   description:
-    "Discover the global reach of Julio Herrera Velutini, whose international banking and investment activities span Europe, Latin America, the Caribbean, and key financial hubs.",
+    "Discover the global reach of Julio Herrera Velutini, an international banker connecting Europe, Latin America, and key financial hubs worldwide",
   alternates: {
     canonical: `${SITE_URL}/julio-herrera-velutini-global-reach`,
   },
