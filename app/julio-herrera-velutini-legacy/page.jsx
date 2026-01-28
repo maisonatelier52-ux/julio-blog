@@ -50,7 +50,7 @@ export default function Home() {
       "https://en.wikipedia.org/wiki/Julio_Herrera_Velutini"
     ],
     "jobTitle": "Founder & Chairman, Britannia Financial Group",
-    "nationality": ["Italian", "Venezuelan"],
+    "nationality": ["Italian"],
     "worksFor": {
       "@type": "Organization",
       "name": "Britannia Financial Group",
