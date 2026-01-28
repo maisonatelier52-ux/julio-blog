@@ -18,7 +18,7 @@ export const metadata = {
     siteName: "Julio Velutini Official",
     images: [
       {
-        url: `${SITE_URL}/julio_velutini_og.webp`,
+        url: `${SITE_URL}/julio_small.webp`,
         width: 1200,
         height: 630,
         alt: "Julio Herrera Velutini Legacy",
@@ -30,7 +30,7 @@ export const metadata = {
     title: "Julio Herrera Velutini Legacy",
     description:
       "A historic banking legacy spanning generations, led today by Julio Herrera Velutini.",
-    images: [`${SITE_URL}/julio_velutini_og.webp`],
+    images: [`${SITE_URL}/julio_small.webp`],
   },
 };
 
@@ -43,7 +43,7 @@ export default function Home() {
     "@type": "Person",
     "name": "Julio Herrera Velutini",
     "url": `${SITE_URL}/julio-herrera-velutini-legacy`,
-    "image": `${SITE_URL}/julio_velutini_og.webp`,
+    "image": `${SITE_URL}/julio_small.webp`,
     "description":
       "Julio Herrera Velutini is a global banker and seventh-generation steward of the historic House of Herrera, a financial dynasty with deep roots in Latin America.",
     "sameAs": [
@@ -82,7 +82,7 @@ export default function Home() {
         {/* Mobile Image */}
         <div className="md:hidden w-full pt-12 px-6">
           <Image
-            src="/julio_small.jpg"
+            src="/julio_small.webp"
             alt="Julio Herrera Velutini"
             width={200}
             height={200}

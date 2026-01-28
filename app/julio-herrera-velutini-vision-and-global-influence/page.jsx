@@ -10,18 +10,18 @@ export const metadata = {
   description:
     "Explore the global vision and international financial influence of Julio Herrera Velutini, an experienced banker shaping cross-border finance and investment.",
   alternates: {
-    canonical: `${SITE_URL}/vision-and-global-influence`,
+    canonical: `${SITE_URL}/julio-herrera-velutini-vision-and-global-influence`,
   },
   openGraph: {
     title: "Julio Herrera Velutini — Vision & Global Influence",
     description:
       "Julio Herrera Velutini’s global vision spans Europe, Latin America, and international financial centers, shaping cross-border banking and finance.",
-    url: `${SITE_URL}/vision-and-global-influence`,
+    url: `${SITE_URL}/julio-herrera-velutini-vision-and-global-influence`,
     type: "article",
     siteName: "Julio Velutini Official",
     images: [
       {
-        url: `${SITE_URL}/julio_velutini_og.webp`,
+        url: `${SITE_URL}/julio_small.webp`,
         width: 1200,
         height: 630,
         alt: "Julio Herrera Velutini Global Influence",
@@ -33,7 +33,7 @@ export const metadata = {
     title: "Julio Herrera Velutini — Global Vision",
     description:
       "Global financial vision and international influence of Julio Herrera Velutini.",
-    images: [`${SITE_URL}/julio_velutini_og.webp`],
+    images: [`${SITE_URL}/julio_small.webp`],
   },
 };
 
@@ -45,8 +45,8 @@ export default function Home() {
     "@context": "https://schema.org",
     "@type": "Person",
     "name": "Julio Herrera Velutini",
-    "url": `${SITE_URL}/vision-and-global-influence`,
-    "image": `${SITE_URL}/julio_velutini_og.webp`,
+    "url": `${SITE_URL}/julio-herrera-velutini-vision-and-global-influence`,
+    "image": `${SITE_URL}/julio_small.webp`,
     "description":
       "Julio Herrera Velutini is an international banker known for his long-term financial vision and global influence across Europe, Latin America, and major financial centers.",
     "jobTitle": "Founder & Chairman, Britannia Financial Group",
@@ -85,7 +85,7 @@ export default function Home() {
         {/* Mobile Top Image */}
         <div className="md:hidden w-full pt-12 px-6">
           <Image
-            src="/julio_small.jpg"
+            src="/julio_small.webp"
             alt="Julio Herrera Velutini"
             width={200}
             height={200}
@@ -97,9 +97,9 @@ export default function Home() {
         {/* Text Content */}
         <div className="max-w-4xl px-6 md:px-15 mt-8 md:mt-0">
 
-          <p className="font-roboto text-xl md:text-base font-semibold tracking-wide mb-4">
+          <h2 className="font-roboto text-xl md:text-base font-semibold tracking-wide mb-4">
             VISION AND GLOBAL INFLUENCE
-          </p>
+          </h2>
 
           <h1 className="font-archivo text-4xl md:text-6xl font-bold leading-tight mb-6">
             Julio Herrera Velutini

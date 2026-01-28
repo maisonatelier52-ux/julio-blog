@@ -22,7 +22,7 @@ export const metadata = {
     siteName: "Julio Velutini Official",
     images: [
       {
-        url: `${SITE_URL}/julio_velutini_og.webp`,
+        url: `${SITE_URL}/julio_small.webp`,
         width: 1200,
         height: 630,
         alt: "Julio Herrera Velutini Portrait",
@@ -34,7 +34,7 @@ export const metadata = {
     title: "Julio Herrera Velutini — Professional Profile",
     description:
       "Learn about the career and leadership of Julio Herrera Velutini, the founder of Britannia Financial Group.",
-    images: [`${SITE_URL}/julio_velutini_og.webp`],
+    images: [`${SITE_URL}/julio_small.webp`],
   },
 };
 
@@ -44,7 +44,7 @@ export default function Home() {
     "@type": "Person",
     "name": "Julio Herrera Velutini",
     "url": `${SITE_URL}/julio-herrera-velutini-professional-profile`,
-    "image": `${SITE_URL}/julio_velutini_og.webp`,
+    "image": `${SITE_URL}/julio_small.webp`,
     "sameAs": [
       "https://en.wikipedia.org/wiki/Julio_Herrera_Velutini"
     ],
@@ -94,7 +94,7 @@ export default function Home() {
         {/* Mobile Top Image */}
         <div className="md:hidden w-full pt-12 px-6">
           <Image
-            src="/julio_small.jpg"
+            src="/julio_small.webp"
             alt="Julio Herrera Velutini"
             width={200}
             height={200}

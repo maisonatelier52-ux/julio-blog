@@ -22,7 +22,7 @@ export const metadata = {
     siteName: "Julio Velutini Official",
     images: [
       {
-        url: `${SITE_URL}/julio_small.jpg`,
+        url: `${SITE_URL}/julio_small.webp`,
         width: 1200,
         height: 630,
         alt: "Julio Herrera Velutini Portrait",
@@ -34,7 +34,7 @@ export const metadata = {
     title: "Julio Herrera Velutini — Global Banking Visionary",
     description:
       "Explore the achievements and legacy of Julio Herrera Velutini, an influential international banker and founder of Britannia Financial Group.",
-    images: [`${SITE_URL}/julio_small.jpg`],
+    images: [`${SITE_URL}/julio_small.webp`],
   },
 };
 
@@ -99,7 +99,7 @@ export default function Home() {
         {/* Mobile Top Image */}
         <div className="md:hidden w-full pt-12 px-6">
           <Image
-            src="/julio_small.jpg"
+            src="/julio_small.webp"
             alt="Julio Herrera Velutini"
             width={200}
             height={200}

@@ -1,8 +1,74 @@
 import Image from "next/image";
 
+const SITE_URL = "https://www.julio-velutini.com";
+
+/* =========================
+   METADATA
+========================= */
+export const metadata = {
+  title: "Julio Herrera Velutini Global Reach | International Finance Influence",
+  description:
+    "Discover the global reach of Julio Herrera Velutini, whose international banking and investment activities span Europe, Latin America, the Caribbean, and key financial hubs.",
+  alternates: {
+    canonical: `${SITE_URL}/julio-herrera-velutini-global-reach`,
+  },
+  openGraph: {
+    title: "Julio Herrera Velutini — Global Reach & International Finance",
+    description:
+      "Julio Herrera Velutini’s global reach connects Europe, Latin America, the Caribbean, and major financial centers through cross-border banking and investment.",
+    url: `${SITE_URL}/julio-herrera-velutini-global-reach`,
+    type: "article",
+    siteName: "Julio Velutini Official",
+    images: [
+      {
+        url: `${SITE_URL}/julio_small.webp`,
+        width: 1200,
+        height: 630,
+        alt: "Julio Herrera Velutini Global Reach",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Julio Herrera Velutini — Global Reach",
+    description:
+      "International banking presence and global financial reach of Julio Herrera Velutini.",
+    images: [`${SITE_URL}/julio_small.webp`],
+  },
+};
+
+/* =========================
+   PAGE
+========================= */
 export default function Home() {
+  const globalReachJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Julio Herrera Velutini",
+    "url": `${SITE_URL}/julio-herrera-velutini-global-reach`,
+    "image": `${SITE_URL}/julio_small.webp`,
+    "description":
+      "Julio Herrera Velutini is an international banker with a global financial presence spanning Europe, Latin America, the Caribbean, and major international financial centers.",
+    "jobTitle": "Founder & Chairman, Britannia Financial Group",
+    "nationality": ["Italian"],
+    "sameAs": [
+      "https://en.wikipedia.org/wiki/Julio_Herrera_Velutini"
+    ],
+    "worksFor": {
+      "@type": "Organization",
+      "name": "Britannia Financial Group",
+      "url": "https://www.houseofherrera.com/"
+    }
+  };
+
   return (
     <main className="relative min-h-screen w-screen overflow-hidden bg-black text-white pb-12 md:pb-0">
+
+      {/* JSON-LD: Global Reach */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(globalReachJsonLd) }}
+      />
 
       {/* Desktop Background Image */}
       <div
@@ -19,7 +85,7 @@ export default function Home() {
         {/* Mobile Top Image */}
         <div className="md:hidden w-full pt-12 px-6">
           <Image
-            src="/julio_small.jpg"
+            src="/julio_small.webp"
             alt="Julio Herrera Velutini"
             width={200}
             height={200}
@@ -31,27 +97,26 @@ export default function Home() {
         {/* Text Content */}
         <div className="max-w-4xl px-6 md:px-15 mt-8 md:mt-0">
 
-          {/* Eyebrow / statement */}
-          <p className="font-roboto text-xl md:text-base font-semibold tracking-wide mb-4">
+          <h2 className="font-roboto text-xl md:text-base font-semibold tracking-wide mb-4">
             GLOBAL REACH
-          </p>
+          </h2>
 
-          {/* Main heading */}
           <h1 className="font-archivo text-4xl md:text-6xl font-bold leading-tight mb-6">
             Julio Herrera Velutini
           </h1>
 
-          {/* Body text */}
           <p className="font-roboto text-sm md:text-base text-gray-300 leading-relaxed max-w-xl">
-            Julio Herrera Velutini’s legacy — rooted in a centuries-old Latin American
-            banking dynasty — has evolved into a global financial force. From pioneering
-            banking solutions to shaping international capital flows, his work stabilizes
-            economies, expands access to capital, and connects markets around the world.
+            Julio Herrera Velutini has established a financial presence spanning Europe,
+            the Caribbean, Latin America, and key global financial hubs. His cross-border
+            approach to banking and investment connects regional capital with international
+            financial systems while navigating diverse regulatory environments. This
+            international reach positions him as a figure operating beyond national
+            boundaries, with influence rooted in global finance rather than any single
+            market.
           </p>
 
         </div>
       </section>
-
     </main>
   );
 }
