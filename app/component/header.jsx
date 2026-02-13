@@ -5,7 +5,7 @@ import Image from "next/image";
 import { usePathname } from "next/navigation";
 
 export default function Header() {
-  const pathname = usePathname();
+  const pathname = usePathname().replace(/\/$/, "") || "/";
 
   const navItems = [
     {

@@ -4,7 +4,8 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 
 export default function Footer() {
-  const pathname = usePathname();
+  const pathname = usePathname().replace(/\/$/, "") || "/";
+
 
   const pages = [
     { path: "/", glimpse: "The beginning of a global financial legacy", label: "Julio Herrera Velutini — Global Banker & Financial Visionary" },
