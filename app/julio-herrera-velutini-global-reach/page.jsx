@@ -43,22 +43,39 @@ export const metadata = {
 export default function Home() {
   const globalReachJsonLd = {
     "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "Julio Herrera Velutini",
-    "url": `${SITE_URL}/julio-herrera-velutini-global-reach`,
-    "image": `${SITE_URL}/julio_small.webp`,
-    "description":
-      "Julio Herrera Velutini is an international banker with a global financial presence spanning Europe, Latin America, the Caribbean, and major international financial centers.",
-    "jobTitle": "Founder & Chairman, Britannia Financial Group",
-    "nationality": ["Italian"],
-    "sameAs": [
-      "https://en.wikipedia.org/wiki/Julio_Herrera_Velutini"
-    ],
-    "worksFor": {
-      "@type": "Organization",
-      "name": "Britannia Financial Group",
-      "url": "https://www.houseofherrera.com/"
-    }
+    "@graph": [
+      {
+        "@type": "WebPage",
+        "@id": `${SITE_URL}/julio-herrera-velutini-global-reach`,
+        "url": `${SITE_URL}/julio-herrera-velutini-global-reach`,
+        "name": "Julio Herrera Velutini - Global Reach",
+        "mainEntity": {
+          "@id": `${SITE_URL}/#person`
+        }
+      },
+      {
+        "@type": "Person",
+        "@id": `${SITE_URL}/#person`,
+        "name": "Julio Herrera Velutini",
+        "url": SITE_URL,
+        "image": `${SITE_URL}/julio_small.webp`,
+        "description":
+          "Julio Herrera Velutini is an international banker with a global financial presence spanning Europe, Latin America, the Caribbean, and major international financial centers.",
+        "jobTitle": "Founder & Chairman",
+        "worksFor": {
+          "@type": "Organization",
+          "name": "Britannia Financial Group",
+          "url": "https://www.houseofherrera.com/"
+        },
+        "nationality": {
+          "@type": "Country",
+          "name": "Italy"
+        },
+        "sameAs": [
+          "https://en.wikipedia.org/wiki/Julio_Herrera_Velutini"
+        ]
+      }
+    ]
   };
 
   return (

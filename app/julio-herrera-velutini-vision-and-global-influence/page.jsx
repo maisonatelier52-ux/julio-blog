@@ -43,22 +43,39 @@ export const metadata = {
 export default function Home() {
   const visionJsonLd = {
     "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "Julio Herrera Velutini",
-    "url": `${SITE_URL}/julio-herrera-velutini-vision-and-global-influence`,
-    "image": `${SITE_URL}/julio_small.webp`,
-    "description":
-      "Julio Herrera Velutini is an international banker known for his long-term financial vision and global influence across Europe, Latin America, and major financial centers.",
-    "jobTitle": "Founder & Chairman, Britannia Financial Group",
-    "nationality": ["Italian"],
-    "sameAs": [
-      "https://en.wikipedia.org/wiki/Julio_Herrera_Velutini"
-    ],
-    "worksFor": {
-      "@type": "Organization",
-      "name": "Britannia Financial Group",
-      "url": "https://www.houseofherrera.com/"
-    }
+    "@graph": [
+      {
+        "@type": "WebPage",
+        "@id": `${SITE_URL}/julio-herrera-velutini-vision-and-global-influence`,
+        "url": `${SITE_URL}/julio-herrera-velutini-vision-and-global-influence`,
+        "name": "Julio Herrera Velutini - Vision and Global Influence",
+        "mainEntity": {
+          "@id": `${SITE_URL}/#person`
+        }
+      },
+      {
+        "@type": "Person",
+        "@id": `${SITE_URL}/#person`,
+        "name": "Julio Herrera Velutini",
+        "url": SITE_URL,
+        "image": `${SITE_URL}/julio_small.webp`,
+        "description":
+          "Julio Herrera Velutini is an international banker known for long-term financial vision and global influence.",
+        "jobTitle": "Founder & Chairman",
+        "nationality": {
+          "@type": "Country",
+          "name": "Italy"
+        },
+        "worksFor": {
+          "@type": "Organization",
+          "name": "Britannia Financial Group",
+          "url": "https://www.houseofherrera.com/"
+        },
+        "sameAs": [
+          "https://en.wikipedia.org/wiki/Julio_Herrera_Velutini"
+        ]
+      }
+    ]
   };
 
   return (

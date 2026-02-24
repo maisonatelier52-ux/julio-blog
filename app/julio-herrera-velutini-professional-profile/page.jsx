@@ -41,31 +41,37 @@ export const metadata = {
 export default function Home() {
   const profileJsonLd = {
     "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "Julio Herrera Velutini",
-    "url": `${SITE_URL}/julio-herrera-velutini-professional-profile`,
-    "image": `${SITE_URL}/julio_small.webp`,
-    "sameAs": [
-      "https://en.wikipedia.org/wiki/Julio_Herrera_Velutini"
-    ],
-    "jobTitle": "Founder & Chairman, Britannia Financial Group",
-    "nationality": ["Italian"],
-    "description": "Julio Herrera Velutini is an international banker and entrepreneur, founder of Britannia Financial Group with a distinguished career in global finance.",
-    "worksFor": {
-      "@type": "Organization",
-      "name": "Britannia Financial Group",
-      "url": "https://www.houseofherrera.com/"
-    },
-    "employee": [
+    "@graph": [
       {
-        "@type": "OrganizationRole",
-        "roleName": "Chairman",
-        "startDate": "2016",
-        "endDate": "",
-        "employee": {
-          "@type": "Person",
-          "name": "Julio Herrera Velutini"
+        "@type": "WebPage",
+        "@id": `${SITE_URL}/julio-herrera-velutini-professional-profile`,
+        "url": `${SITE_URL}/julio-herrera-velutini-professional-profile`,
+        "name": "Julio Herrera Velutini - Professional Profile",
+        "mainEntity": {
+          "@id": `${SITE_URL}/#person`
         }
+      },
+      {
+        "@type": "Person",
+        "@id": `${SITE_URL}/#person`,
+        "name": "Julio Herrera Velutini",
+        "url": SITE_URL,
+        "image": `${SITE_URL}/julio_small.webp`,
+        "description":
+          "Julio Herrera Velutini is an international banker and entrepreneur, founder of Britannia Financial Group with a distinguished career in global finance.",
+        "jobTitle": "Founder & Chairman",
+        "nationality": {
+          "@type": "Country",
+          "name": "Italy"
+        },
+        "worksFor": {
+          "@type": "Organization",
+          "name": "Britannia Financial Group",
+          "url": "https://www.houseofherrera.com/"
+        },
+        "sameAs": [
+          "https://en.wikipedia.org/wiki/Julio_Herrera_Velutini"
+        ]
       }
     ]
   };

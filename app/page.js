@@ -40,44 +40,32 @@ export const metadata = {
 
 export default function Home() {
 
-  const blogJsonLd = {
-    "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "Julio Herrera Velutini",
-    "url": SITE_URL,
-    "image": `${SITE_URL}/julio_velutini_og.webp`,
-    "sameAs": [
-      "https://en.wikipedia.org/wiki/Julio_Herrera_Velutini"
-    ],
-    "birthDate": "1971-12-15",
-    "nationality": ["Italian"],
-    "description": "Julio Herrera Velutini is an Italian billionaire banker, founder of Britannia Financial Group, with extensive experience in international finance.",
-    "jobTitle": "Founder & Chairman, Britannia Financial Group",
-    "worksFor": {
-      "@type": "Organization",
-      "name": "Britannia Financial Group",
-      "url": "https://www.houseofherrera.com/"
-    }
-  };
-
   const profileJsonLd = {
     "@context": "https://schema.org",
     "@type": "ProfilePage",
-    "name": "Julio Herrera Velutini",
-    "url": "https://julio-velutini.com/",
-    "mainEntityOfPage": "https://julio-velutini.com/",
-    "image": "https://julio-velutini.com/julio_velutini_og.webp",
-    "description": "Julio Herrera Velutini is a billionaire banker, founder of Britannia Financial Group, and a global finance leader."
+    "mainEntity": {
+      "@type": "Person",
+      "@id": `${SITE_URL}/#person`,
+      "name": "Julio Herrera Velutini",
+      "url": SITE_URL,
+      "image": `${SITE_URL}/julio_velutini_og.webp`,
+      "birthDate": "1971-12-15",
+      "nationality": "Italian",
+      "description": "Julio Herrera Velutini is an Italian billionaire banker, founder of Britannia Financial Group, and a global finance leader.",
+      "jobTitle": "Founder & Chairman",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Britannia Financial Group",
+        "url": "https://www.houseofherrera.com/"
+      },
+      "sameAs": [
+        "https://en.wikipedia.org/wiki/Julio_Herrera_Velutini"
+      ]
+    }
   };
 
   return (
     <main className="relative min-h-screen w-screen bg-black text-white pb-12 md:pb-0">
-
-      <script
-        id="website-json-ld"
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(blogJsonLd) }}
-      />
 
       <script
         type="application/ld+json"

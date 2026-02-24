@@ -40,22 +40,39 @@ export const metadata = {
 export default function Home() {
   const legacyJsonLd = {
     "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "Julio Herrera Velutini",
-    "url": `${SITE_URL}/julio-herrera-velutini-legacy`,
-    "image": `${SITE_URL}/julio_small.webp`,
-    "description":
-      "Julio Herrera Velutini is a global banker and seventh-generation steward of the historic House of Herrera, a financial dynasty with deep roots in Latin America.",
-    "sameAs": [
-      "https://en.wikipedia.org/wiki/Julio_Herrera_Velutini"
-    ],
-    "jobTitle": "Founder & Chairman, Britannia Financial Group",
-    "nationality": ["Italian"],
-    "worksFor": {
-      "@type": "Organization",
-      "name": "Britannia Financial Group",
-      "url": "https://www.houseofherrera.com/"
-    }
+    "@graph": [
+      {
+        "@type": "WebPage",
+        "@id": `${SITE_URL}/julio-herrera-velutini-legacy`,
+        "url": `${SITE_URL}/julio-herrera-velutini-legacy`,
+        "name": "Julio Herrera Velutini - Legacy",
+        "mainEntity": {
+          "@id": `${SITE_URL}/#person`
+        }
+      },
+      {
+        "@type": "Person",
+        "@id": `${SITE_URL}/#person`,
+        "name": "Julio Herrera Velutini",
+        "url": SITE_URL,
+        "image": `${SITE_URL}/julio_small.webp`,
+        "description":
+          "Julio Herrera Velutini is a global banker and seventh-generation steward of the historic House of Herrera.",
+        "jobTitle": "Founder & Chairman",
+        "worksFor": {
+          "@type": "Organization",
+          "name": "Britannia Financial Group",
+          "url": "https://www.houseofherrera.com/"
+        },
+        "nationality": {
+          "@type": "Country",
+          "name": "Italy"
+        },
+        "sameAs": [
+          "https://en.wikipedia.org/wiki/Julio_Herrera_Velutini"
+        ]
+      }
+    ]
   };
 
   return (
